@@ -20,7 +20,7 @@
         formData.append("RoomCapacity", $("#txtRoomCapacity").val()),
         formData.append("RoomDescription", $("#txtRoomdescription").val()),
         formData.append("Image", $("#UploadImage").get(0).files[0]),
-    }
+    
         $.ajax({
             async: true,
             type: 'POST',
@@ -34,7 +34,7 @@
                 alert('There was a problem with your request. Please try again later! ');
             }
         })
-    
+    } 
 
     function DisplayImage(result) {
         if (result.files && result.files[0]) {
